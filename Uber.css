@@ -1,0 +1,1182 @@
+@font-face {
+    font-family: "regular-bold";
+    src: url(fonts/14f73a3f74611002.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Regular2";
+    src: url(fonts/276edd4275dda838.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("fonts/eee1724e2e5a8ebd.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SemiBold Italic";
+    src: url("../assets/font/Inter-SemiBoldItalic.woff2") format("woff2");
+}
+
+
+body {
+    margin: 0px;
+}
+
+.uber-container {
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.uber-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url("uber-img/smallest.png");
+}
+
+.nav-container {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+    padding: 0px 40px;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.urban-head1 {
+    z-index: 1;
+    width: 100%;
+}
+
+.urban-head2 {
+    height: 48px;
+    width: 100%;
+}
+
+.urban-head3 {
+    z-index: 3;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+}
+
+.urban-head4 {
+
+    margin: 0px auto;
+    width: 100%;
+}
+
+.urban-head5 {
+    padding: 0px 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    -moz-box-align: center;
+    justify-content: space-between;
+
+}
+
+.first {
+    display: inline-flex;
+    align-items: center;
+    width: min-content;
+}
+
+.line {
+    display: flex;
+    margin: auto 0;
+    height: 36px;
+    width: 36px;
+    align-items: center;
+    position: relative;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+
+.uber-eats-logo img {
+    display: block;
+    height: 16px;
+    width: auto;
+
+}
+
+.ride {
+    display: flex;
+    white-space: nowrap;
+    margin-inline-start: 24px;
+    margin-inline-end: 16px;
+    gap: 8px;
+    align-items: center;
+}
+
+.ride a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "regular";
+    font-weight: 500;
+}
+
+.log-sign {
+    display: flex;
+
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.log {
+    margin-right: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+    background-color: white;
+    height: 36px;
+    width: 36px;
+
+    border-radius: 500px;
+    display: inline-flex;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: "regular";
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.log::before {
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'><path fill-rule='evenodd' clip-rule='evenodd' d='M18.958 7.042a5.958 5.958 0 11-11.916 0 5.958 5.958 0 0111.916 0zM3.25 21.667c0-3.575 2.925-6.5 6.5-6.5h6.5c3.575 0 6.5 2.925 6.5 6.5v3.25H3.25v-3.25z'/></svg>");
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.log2 {
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+    background-color: black;
+    height: 36px;
+    padding: 8px 12px;
+    border-radius: 500px;
+    display: inline-flex;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "regular";
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    white-space: nowrap;
+
+}
+
+.delivery-container {
+    position: absolute;
+    z-index: 99;
+    top: 74px;
+    padding: 0px 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.order-heading {
+    margin-bottom: 24px;
+    line-height: 44px;
+    font-weight: 500;
+    font-size: 36px;
+    font-family: "regular-bold";
+    white-space: nowrap;
+}
+
+.enter-container {
+    display: block;
+    padding: 8px 0px;
+
+}
+
+.enter {
+    position: sticky;
+    box-shadow: rgb(243, 243, 243) 0px -1px 0px inset;
+    height: 56px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+
+}
+
+.enter1 {
+    position: sticky;
+    box-shadow: rgb(243, 243, 243) 0px -1px 0px inset;
+    height: 56px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+
+}
+
+.enter svg {
+    margin: 12px;
+    height: 24px;
+    width: 24px;
+    flex-direction: 0 0 auto;
+}
+
+.enter1 svg {
+    margin: 12px;
+    height: 24px;
+    width: 24px;
+    flex-direction: 0 0 auto;
+}
+
+.placeholder {
+    color: rgb(75, 75, 75);
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "regular2";
+}
+
+.enter-container2 {
+    display: block;
+    margin-bottom: 16px;
+
+}
+
+.placeholder1 {
+    flex-grow: 1;
+    line-height: 20px;
+    display: flex;
+    font-size: 16px;
+    color: black;
+    font-family: "regular";
+}
+
+.svg1 {
+    width: 48px;
+    height: 48px;
+}
+
+.search-black {
+    background-color: black;
+    border-radius: 8px;
+    padding: 12px 16px;
+    min-height: 56px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 24px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-box-pack: center;
+    font-family: "regular";
+
+}
+
+.search-black a {
+    text-decoration: none;
+    color: white;
+    padding-top: 1px;
+}
+
+.or-sign {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "regular";
+}
+
+.or-sign a {
+    color: black;
+}
+
+.space-after {
+    height: 32px;
+}
+
+.get-container {
+    padding: 16px 0px 0px;
+}
+
+.get-app {
+    margin: 0px 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.get-app1 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.android {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.space16 {
+    width: 22px;
+}
+
+.android img {
+    width: 64px;
+    height: 64px;
+    border-radius: 15%;
+}
+
+.android p {
+    line-height: 28px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    font-family: "regular-bold";
+    letter-spacing: normal;
+}
+
+.buttons {
+    background: rgb(243, 243, 243);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 18px;
+    min-height: 56px;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+}
+
+.button-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-app svg {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+}
+
+.space8 {
+    width: 8px;
+}
+
+.getit {
+    font-size: 18px;
+    font-family: "regular";
+}
+
+.space-after2 {
+    height: 48px;
+}
+
+.pictures {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1 {
+    height: auto;
+    width: 100%;
+    margin-bottom: 4px;
+    aspect-ratio: auto 343 / 191;
+}
+
+.feed {
+    line-height: 32px;
+    font-size: 24px;
+    margin: 0px;
+    font-family: "regular-bold";
+}
+
+.feed-sub {
+    margin-top: 8px;
+    text-decoration: underline;
+    line-height: 20px;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "regular";
+    margin-bottom: 0px;
+}
+
+.space-after3 {
+    height: 36px;
+}
+
+.space-after4 {
+    height: 48px;
+}
+.map{
+    margin: 0px 16px;
+}
+.map-h2{
+    font-family: "regular-bold";
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.map-pic{
+    margin: 16px 0px;
+    content: url(uber-img/map.png);
+    margin-bottom: 12.5px;
+}
+.map-heading a{
+    display: none;
+}
+.grid-list{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 17px 8px;
+    grid-auto-flow:  column;
+    display: grid;
+}
+.points a{
+    text-decoration: none;
+    color: black;
+    font-family: "Regular2";
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.space24{
+    height: 24px;
+}
+.view{
+    color: black;
+    font-size: 16px;
+    font-family: "regular";
+}
+.space48{
+    height: 48px;
+}
+.grid-list2{
+    display: none;
+}
+.countries{
+    margin: 0px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counties h2{
+    line-height: 32px;
+    font-size: 24px;
+    font-family: "regular-bold";
+    font-weight: 100;
+    margin-top: 0px;
+}
+.counties-cont{
+    display: grid;
+    grid-template-rows: repeat(15,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px 8px;
+    grid-auto-flow: column;
+    margin-top: 24px;
+}
+.counties-cont a{
+    color: black;
+    font-family: "Regular2";
+    text-decoration: none;
+}
+.view-all a{
+    color: black;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "regular";
+}
+.hidee{
+    display: none;
+}
+.footer-container{
+
+    border-top: 1px solid rgb(243, 243, 243);
+    margin-top: 64px;
+    padding: 64px 16px 80px;
+    background-color: white;
+
+
+}
+.eats-img{
+    margin-bottom: 48px;
+    height: 24px;
+    width: auto;
+}
+.foot1{
+    margin-bottom: 64px;
+}
+.foot2{
+    gap: 16px;
+    flex-flow: wrap;
+    display: flex;
+}
+.app{
+    width: auto;
+    height: 40px;
+    aspect-ratio: auto 135 / 40;
+}
+.google{
+        width: auto;
+    height: 40px;
+    aspect-ratio: auto 135 / 40;
+
+}
+   .get-help{
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+   }    
+   .get-help a{
+    margin-bottom: 16px;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: "Regular2";
+    color: black;
+    text-decoration: none;
+   }    
+   .fl{
+    display: flex;
+    flex-direction: row;
+   }               
+@media screen and (min-width:768px) {
+    .uber-image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow-y: hidden;
+
+    }
+    .map-pic{
+        width: 100%;
+        content:url(uber-img/map2.png) ;
+    }    
+    .foot2{
+        gap: 16px;
+        flex-wrap: wrap;
+        display: flex;
+    }        
+
+    .nav-container {
+        height: 64px;
+        display: flex;
+        flex-direction: row;
+        top: 0px;
+        padding: 0px 40px;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .urban-head1 {
+        z-index: 1;
+        width: 100%;
+    }
+
+    .urban-head2 {
+        height: 48px;
+    }
+
+    .urban-head3 {
+        z-index: 3;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        position: fixed;
+    }
+
+    .urban-head4 {
+        transition: 400ms;
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    .urban-head5 {
+        padding: 0px 16px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        -moz-box-align: center;
+        justify-content: space-between;
+
+    }
+
+    .first {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .line {
+        display: flex;
+        margin: auto 0;
+        height: 36px;
+        margin-right: 2px;
+        width: 36px;
+        align-items: center;
+        position: relative;
+        padding-left: 2px;
+
+    }
+
+
+
+    .uber-eats-logo img {
+        display: block;
+        height: 16px;
+        width: auto;
+
+    }
+
+    .ride {
+        display: flex;
+        white-space: nowrap;
+        margin-inline-start: 24px;
+        margin-inline-end: 16px;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .ride a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-family: "regular";
+        font-weight: 500;
+    }
+
+    .log-sign {
+        margin-inline-start: 0px;
+        display: flex;
+    }
+
+
+    .log {
+        margin-right: 12px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+        background-color: white;
+        height: 36px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 500px;
+        display: inline-flex;
+        font-size: 14px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        color: black;
+        font-family: "regular";
+        font-weight: 500;
+
+        text-decoration: none;
+
+
+    }
+
+
+    .log2 {
+
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+        background-color: black;
+        height: 36px;
+        padding: 12px;
+        border-radius: 500px;
+        display: inline-flex;
+        font-size: 14px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-family: "regular";
+        font-weight: 500;
+        text-decoration: none;
+
+    }
+
+    .enter-container {
+        padding: 8px 0px;
+    }
+
+    .space16 {
+        width: 16px;
+    }
+.map-heading a{
+    display: none;
+}
+.grid-list2{
+    display: none;
+}
+.hidee{
+    display: none;
+}
+
+}
+
+@media screen and (min-width:1024px) {
+    .uber-image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow-y: hidden;
+
+    }
+
+    .log {
+        display: flex;
+        justify-content: center;
+    }
+
+    .log-sign {
+        margin: 0px;
+    }
+
+    .line {
+        margin-right: 2px;
+    }
+
+    .enter-container {
+        padding: 0px;
+    }
+
+    /* .img1{
+    height: auto;
+    width: 992px;
+    margin-bottom: 4px;
+   
+} */
+  .map-pic{
+        width: 100%;
+        content: url(uber-img/map3.png);
+        height: 360px;
+        margin-top: 17px;
+    }
+    .pics1{
+        width: 100%;
+    }
+   .map-heading a{
+    display: none;
+   }
+.grid-list2{
+    display: none;
+}
+
+
+.hidee{
+    display: none;
+}
+
+}
+
+@media screen and (min-width:1025px) {
+
+    .uber-image {
+        content: url("uber-img/full.png");
+
+    }
+    .map-pic{
+        content: url("uber-img/map4.png");
+    }
+
+
+    .nav-container {
+        height: 64px;
+        display: flex;
+        flex-direction: row;
+        top: 0px;
+        padding: 0px 40px;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .urban-head1 {
+        z-index: 1;
+        width: 100%;
+    }
+
+    .urban-head2 {
+        height: 64px;
+    }
+
+    .urban-head3 {
+        z-index: 3;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        position: fixed;
+    }
+
+    .urban-head4 {
+        transition: 400ms;
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    .urban-head5 {
+        padding: 0px 40px;
+        min-width: 1024px;
+        max-width: 1920px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        -moz-box-align: center;
+        justify-content: space-between;
+
+    }
+
+    .first {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .line {
+        display: flex;
+        margin: auto 0;
+        height: 48px;
+        width: 48px;
+        align-items: center;
+        position: relative;
+        padding-left: 0px;
+    }
+
+    .uber-eats-logo {
+        margin-inline-end: 28px;
+        margin-left: -6px;
+
+
+    }
+
+    .uber-eats-logo img {
+        display: block;
+        height: 16px;
+        width: auto;
+
+    }
+
+    .ride {
+        display: flex;
+        white-space: nowrap;
+        margin-inline-start: 24px;
+        margin-inline-end: 16px;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .ride a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-family: "regular";
+        font-weight: 500;
+    }
+
+    .log-sign {
+        margin-inline-start: 24px;
+        display: flex;
+    }
+
+    .all {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .log {
+        margin-right: 16px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+        background-color: white;
+        height: 36px;
+        width: fit-content;
+        padding: 12px;
+        border-radius: 500px;
+        display: inline-flex;
+        font-size: 14px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        color: black;
+        font-family: "regular";
+        font-weight: 500;
+        content: "Log in";
+        text-decoration: none;
+
+
+    }
+
+    .log::before {
+        content: "Log in";
+        white-space: nowrap;
+        width: fit-content;
+        font-family: "regular";
+        align-items: center;
+        display: flex;
+    }
+
+    .log2 {
+
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+        background-color: black;
+        height: 36px;
+        padding: 12px;
+        border-radius: 500px;
+        display: inline-flex;
+        font-size: 14px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-family: "regular";
+        font-weight: 500;
+        text-decoration: none;
+
+    }
+
+    .placeholder {
+        color: rgb(75, 75, 75);
+        line-height: 24px;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: "regular";
+        padding-left: 4px;
+
+    }
+
+    .delivery-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 40px;
+        display: block;
+        min-width: 1024px;
+        max-width: 1920px;
+        margin: 0 auto;
+        top: 31%;
+
+
+    }
+
+    .enter-main {
+        display: flex;
+        justify-content: left;
+    }
+
+    .enter-main1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .delivery-container h2 {
+        max-width: 60%;
+        margin-bottom: 40px;
+        line-height: 64px;
+        font-size: 52px;
+        position: relative;
+        bottom: 1px;
+        right: 1px;
+    }
+
+    .enter-container {
+        max-width: 540px;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        position: relative;
+    }
+
+    .enter-container2 {
+        margin-bottom: 0px;
+    }
+
+    .space {
+        width: 8px;
+    }
+
+    .placeholder1 {
+        flex-grow: 0px;
+        padding-right: 4px;
+    }
+
+    .enter {
+        min-width: 495px;
+        border-radius: 8px;
+        box-shadow: rgb(243, 243, 243) 0px -1px 0px inset;
+        transition: box-shadow 0.3s ease-in-out;
+
+    }
+
+    .enter1 {
+        min-width: 500px;
+        border-radius: 8px;
+        box-shadow: rgb(243, 243, 243) 0px -1px 0px inset;
+        transition: box-shadow 0.3s ease-in-out;
+        min-width: 0px;
+        border-radius: 0px;
+    }
+
+    .search-black {
+        height: fit-content;
+    }
+
+    .search-black a {
+        padding-bottom: 2px;
+        padding-right: 1px;
+    }
+
+    .space-after {
+        height: 80px;
+    }
+
+    .get-app {
+        display: none;    
+    }
+
+    .pictures {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 40px;
+        margin: 0px;
+        margin-bottom: -24px;
+        margin-right:11px;
+        margin-left: -12px;
+        
+    
+        
+    }
+
+    .pics1 {
+        padding: 0px 12px;
+        margin-left: 0%;
+        width: 33.3333%;
+        
+    }
+
+   .space-after2{
+    height: 0px;
+
+   }
+   .get-container{
+    padding: 0px;
+   }
+   .feed{
+    font-size: 28px;
+   }
+   .feed-sub{
+    margin-top: 9px;
+   }
+ .space-after4{
+    height: 40px;
+ }
+ .map-high{
+    padding: 0px 40px;
+    min-width: 1024px;
+    max-width: 1920px;
+ }
+.space-after5{
+    height: 143px;
+}
+.map-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.map-heading a{
+    color: black;
+    font-family: "regular";
+    display: flex;
+    align-items: end;
+                                                         
+}
+.map{
+    margin: 0px;
+}
+.map h2{
+    font-size: 36px;
+}
+.map-pic{
+    margin: 20px 0px;
+}
+.grid-list{
+    display: none;                                         
+}
+.grid-list2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 25px;
+    grid-auto-flow: column;
+   
+}
+.view{
+    display: none;
+}
+.counties-cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 25px;
+    grid-auto-flow: column;
+}
+.space80{
+    height: 86px;
+}
+.space48{
+    display: none;
+}
+.space24{
+    display: none;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hidee{
+    display: flex;
+}
+.view-hide{
+ display: none;
+}
+}
+
+
